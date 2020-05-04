@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?18922144");
-  src: url("../fonts/fontello.eot?18922144#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?18922144") format("woff2"), url("../fonts/fontello.woff?18922144") format("woff"), url("../fonts/fontello.ttf?18922144") format("truetype"), url("../fonts/fontello.svg?18922144#fontello") format("svg");
+  src: url("../fonts/fontello.eot?24125053");
+  src: url("../fonts/fontello.eot?24125053#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?24125053") format("woff2"), url("../fonts/fontello.woff?24125053") format("woff"), url("../fonts/fontello.ttf?24125053") format("truetype"), url("../fonts/fontello.svg?24125053#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?18922144#fontello') format('svg');
+    src: url('../font/fontello.svg?24125053#fontello') format('svg');
   }
 }
 */
@@ -20,7 +20,6 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -54,7 +53,7 @@
 }
 
 /* '' */
-.icon-youtube-play:before {
+.icon-youtube:before {
   content: '\f16a';
 }
 
@@ -64,6 +63,11 @@
 }
 
 /* '' */
+.icon-whatsapp:before {
+  content: '\f232';
+}
+
+/* '' */
 body {
   margin: 0;
   background-color: #ffffff;
@@ -101,14 +105,14 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #0d58df;
+  background-color: #0984e3;
   -webkit-transform: translateY(42px) scale(0);
           transform: translateY(42px) scale(0);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .top-nav_menu li a:hover {
-  color: #0d58df;
+  color: #0984e3;
 }
 .top-nav_menu li a:hover::after {
   -webkit-transform: translateY(4px) scale(1);
@@ -139,27 +143,44 @@ body {
   width: auto;
   height: 80px;
 }
-.footer ul {
+.footer ul.footer_menu {
   padding: 0;
   list-style: none;
   text-align: center;
 }
-.footer ul li {
+.footer ul.footer_menu li {
   line-height: 32px;
   text-transform: uppercase;
 }
 .footer-contacts, .footer-social-links {
   text-align: right;
 }
+.footer-contacts a, .footer-social-links a {
+  margin: 12px 0;
+}
 .footer-social-links li {
   display: inline-block;
+  margin-left: 10px;
 }
 .footer-social-links li a {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
+.footer-social-links li a i {
+  font-size: 15px;
+}
+.footer-social-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: #0074cc;
+}
+
+/*# sourceMappingURL=main.css.map */
